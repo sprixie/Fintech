@@ -8,6 +8,7 @@ from dash import dash_table
 df = pd.read_csv('List of MENA fintech companies - Crunchbase pro.csv', delimiter=';')
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div(
     children=[
